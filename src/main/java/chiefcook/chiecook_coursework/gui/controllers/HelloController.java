@@ -1,4 +1,4 @@
-package chiefcook.chiecook_coursework;
+package chiefcook.chiecook_coursework.gui.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

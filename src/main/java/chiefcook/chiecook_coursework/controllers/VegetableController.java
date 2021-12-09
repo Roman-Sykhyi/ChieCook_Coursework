@@ -36,10 +36,10 @@ public class VegetableController {
                 List<String> params = Arrays.asList(line.split(" "));
                 vegetables.add(new Vegetable(params.get(0), Double.parseDouble(params.get(1))));
             }
-            //LOG.info("List of vegetables successfully read from file");
+            LOG.info("List of vegetables successfully read from file");
         } catch (Exception e) {
-            //LOG.error("Error reading list of vegetables from file");
-            //LOG.error(e.getMessage());
+            LOG.error("Error reading list of vegetables from file");
+            LOG.error(e.getMessage());
             System.out.println("Error reading list of vegetables from file");
             System.out.println("Exiting program");
             System.exit(1);
@@ -51,11 +51,14 @@ public class VegetableController {
 
         try {
             Connection connection = DriverManager.getConnection(url);
+            LOG.info("Successfully connected to database");
 
             String query = "SELECT * FROM Vegetables";
 
             Statement statement = connection.createStatement();
             ResultSet result = statement.executeQuery(query);
+
+            LOG.info("Reading data from database");
 
             while(result.next()) {
                 String name = result.getString("Name");
@@ -63,9 +66,12 @@ public class VegetableController {
 
                 vegetables.add(new Vegetable(name, calories));
             }
-
             connection.close();
+
+            LOG.info("Finished reading data from database. Closing the connection");
         } catch (Exception e) {
+            LOG.error("Failed connect to database");
+            LOG.error(e.getMessage());
             System.out.println(e.getMessage());
         }
     }

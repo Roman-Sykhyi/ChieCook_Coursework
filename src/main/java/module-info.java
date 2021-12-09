@@ -10,4 +10,8 @@ module chiefcook.chiecook_coursework {
 
     opens chiefcook.chiecook_coursework to javafx.fxml;
     exports chiefcook.chiecook_coursework;
+    exports chiefcook.chiecook_coursework.controllers;
+    opens chiefcook.chiecook_coursework.controllers to javafx.fxml;
+    exports chiefcook.chiecook_coursework.gui.controllers;
+    opens chiefcook.chiecook_coursework.gui.controllers to javafx.fxml;
 }

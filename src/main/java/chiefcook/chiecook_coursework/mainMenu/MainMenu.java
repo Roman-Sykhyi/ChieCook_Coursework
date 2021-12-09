@@ -27,33 +27,4 @@ public class MainMenu {
                 commands.put(ViewSaladVegetablesWithCaloriesInRange.NAME, new ViewSaladVegetablesWithCaloriesInRange(saladController));
                 commands.put(ExitCommand.NAME, new ExitCommand());
         }
-
-        public void run() {
-                while(true) {
-                        System.out.println("Enter command (print 'help' for available commands). Use 'help [command]' to see how to use command");
-
-                        String commandLine = scanner.nextLine();
-                        List<String> params = Arrays.asList(commandLine.split(" "));
-                        IMenuCommand command = commands.get(params.get(0));
-
-                        LOG.info("User enters command with params: " + params.toString());
-
-                        if(command != null) {
-                                command.execute(params.subList(1, params.size()));
-                        } else if("help".equals(commandLine)) {
-                                System.out.println(commands.keySet());
-                        } else if (params.get(0).equals("help")){
-                                IMenuCommand menuCommand = commands.get(params.get(1));
-                                if(menuCommand != null) {
-                                        System.out.println(menuCommand.getHelp());
-                                } else {
-                                        System.out.println("There is no such command");
-                                }
-                        } else {
-                                System.out.println("Incorrect command. Please try again");
-                        }
-
-                        System.out.println("--------------------------------------------");
-                }
-        }
 }
