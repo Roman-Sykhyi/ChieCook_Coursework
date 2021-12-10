@@ -18,8 +18,8 @@ public class SortVegetablesCommand implements IMenuCommand {
     }
 
     @Override
-    public void execute(List<String> params) {
-        try {
+    public void execute() {
+        /*try {
             String sortType = params.get(0);
 
             if(sortType.equals("name")) {
@@ -40,7 +40,7 @@ public class SortVegetablesCommand implements IMenuCommand {
             LOG.error("Error sorting vegetables");
             LOG.error(e.getMessage());
             System.out.println("Error sorting vegetables");
-        }
+        }*/
     }
 
     @Override

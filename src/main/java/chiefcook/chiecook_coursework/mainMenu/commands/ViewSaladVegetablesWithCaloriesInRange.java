@@ -18,8 +18,8 @@ public class ViewSaladVegetablesWithCaloriesInRange implements IMenuCommand {
     }
 
     @Override
-    public void execute(List<String> params) {
-        System.out.println("Vegetables in salad with calories in range " + params.get(0) + " to " + params.get(1) + ":");
+    public void execute() {
+        /*System.out.println("Vegetables in salad with calories in range " + params.get(0) + " to " + params.get(1) + ":");
 
         try {
             List<Vegetable> vegetables = saladController
@@ -34,7 +34,7 @@ public class ViewSaladVegetablesWithCaloriesInRange implements IMenuCommand {
             LOG.error("Error finding vegetables with calories in a given range");
             LOG.error(e.getMessage());
             System.out.println("Error finding vegetables");
-        }
+        }*/
     }
 
     @Override

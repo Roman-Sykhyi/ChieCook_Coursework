@@ -18,7 +18,7 @@ public class CreateSaladCommand implements IMenuCommand {
     }
 
     @Override
-    public void execute(List<String> params) {
+    public void execute() {
         LOG.info("User creating new salad");
         System.out.println("Creating new salad");
         saladController.createSalad();

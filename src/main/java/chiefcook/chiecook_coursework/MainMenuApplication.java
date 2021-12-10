@@ -2,13 +2,10 @@ package chiefcook.chiecook_coursework;
 
 import chiefcook.chiecook_coursework.controllers.SaladController;
 import chiefcook.chiecook_coursework.controllers.VegetableController;
-import chiefcook.chiecook_coursework.gui.controllers.HelloController;
-import chiefcook.chiecook_coursework.gui.controllers.MainMenuController;
 import chiefcook.chiecook_coursework.mainMenu.MainMenu;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.io.IOException;

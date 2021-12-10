@@ -28,7 +28,7 @@ public class MainMenu {
                 commands.put(ExitCommand.NAME, new ExitCommand());
         }
 
-        public void execute(String command, List<String> params) {
+        public void execute(String command) {
                 IMenuCommand menuCommand = commands.get(command);
 
                 if(menuCommand == null) {
@@ -37,6 +37,6 @@ public class MainMenu {
                         return;
                 }
 
-                menuCommand.execute(params);
+                menuCommand.execute();
         }
 }

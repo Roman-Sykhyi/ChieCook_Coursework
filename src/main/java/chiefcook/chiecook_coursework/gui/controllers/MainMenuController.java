@@ -66,7 +66,15 @@ public class MainMenuController implements Initializable {
         mainMenu = MainMenuApplication.mainMenu;
 
         viewAvailableVegetablesBtn.setOnAction(event -> {
-            mainMenu.execute("vegetables", new ArrayList<String>());
+            mainMenu.execute("vegetables");
+        });
+
+        viewSaladBtn.setOnAction(event -> {
+            mainMenu.execute("viewSalad");
+        });
+
+        addIgredientBtn.setOnAction(event -> {
+            mainMenu.execute("addVegetable");
         });
     }
 }

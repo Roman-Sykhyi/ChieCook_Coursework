@@ -1,6 +1,7 @@
 package chiefcook.chiecook_coursework.gui.controllers;
 
 import chiefcook.chiecook_coursework.MainMenuApplication;
+import chiefcook.chiecook_coursework.controllers.SaladController;
 import chiefcook.chiecook_coursework.controllers.VegetableController;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -12,9 +13,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class ViewAvailableVegetablesController implements Initializable {
+public class ViewSaladController implements Initializable {
 
-    private VegetableController vegetableController;
+    private SaladController saladController;
 
     @FXML
     private Label label;
@@ -24,9 +25,9 @@ public class ViewAvailableVegetablesController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        vegetableController = MainMenuApplication.vegetableController;
+        saladController = MainMenuApplication.saladController;
 
-        List<String> items = Arrays.asList(vegetableController.getVegetablesInfo().split("\n"));
+        List<String> items = Arrays.asList(saladController.getSaladInfo().split("\n"));
 
         for (String item : items) {
             listView.getItems().add(item);

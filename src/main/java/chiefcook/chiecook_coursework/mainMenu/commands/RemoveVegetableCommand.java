@@ -18,8 +18,8 @@ public class RemoveVegetableCommand implements IMenuCommand {
     }
 
     @Override
-    public void execute(List<String> params) {
-        System.out.println("Removing vegetable from salad");
+    public void execute() {
+        /*System.out.println("Removing vegetable from salad");
 
         try {
             saladController.removeIngredient(params.get(0));
@@ -29,7 +29,7 @@ public class RemoveVegetableCommand implements IMenuCommand {
             LOG.error("Error removing vegetable from salad");
             LOG.error(e.getMessage());
             System.out.println("Error removing vegetable from salad");
-        }
+        }*/
     }
 
     @Override

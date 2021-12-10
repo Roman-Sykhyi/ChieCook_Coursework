@@ -1,9 +1,14 @@
 package chiefcook.chiecook_coursework.mainMenu.commands;
 
+import chiefcook.chiecook_coursework.MainMenuApplication;
 import chiefcook.chiecook_coursework.controllers.SaladController;
 import chiefcook.chiecook_coursework.controllers.VegetableController;
 import chiefcook.chiecook_coursework.models.Vegetable;
 
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 import org.apache.log4j.Logger;
 
 import java.util.List;
@@ -22,20 +27,18 @@ public class AddVegetableCommand implements IMenuCommand {
     }
 
     @Override
-    public void execute(List<String> params) {
-        System.out.println("Adding vegetable to salad");
-
+    public void execute() {
         try {
-            Vegetable vegetable = vegetableController.getVegetable(params.get(0));
-            Double weight = Double.parseDouble(params.get(1));
+            Stage stage = new Stage();
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.setResizable(false);
 
-            saladController.addIngredient(vegetable, weight);
-            LOG.info("User adding " + weight + " grams of " + vegetable.getName() + " to salad");
-            System.out.println(weight + " grams of " + vegetable.getName() + " added to salad");
+            FXMLLoader fxmlLoader = new FXMLLoader(MainMenuApplication.class.getResource("add-ingredients.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 600, 214);
+            stage.setScene(scene);
+            stage.showAndWait();
         } catch (Exception e) {
-            LOG.error("Error adding vegetable");
-            LOG.error(e.getMessage());
-            System.out.println("Error adding vegetable");
+            e.printStackTrace();
         }
     }
 

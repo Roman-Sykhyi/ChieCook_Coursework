@@ -6,7 +6,7 @@ public class ExitCommand implements IMenuCommand {
     public final static String NAME = "exit";
 
     @Override
-    public void execute(List<String> params) {
+    public void execute() {
         System.out.println("Exiting program");
         System.exit(0);
     }

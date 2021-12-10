@@ -9,6 +9,7 @@ import java.io.FileReader;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class VegetableController {
@@ -88,12 +89,17 @@ public class VegetableController {
         return vegetable;
     }
 
+    public List<Vegetable> getVegetables() {
+        return Collections.unmodifiableList(vegetables);
+    }
+
     public String getVegetablesInfo() {
         String result = "";
 
         for(int i = 0; i < vegetables.size(); i++) {
             result += i+1 + ". ";
-            result += vegetables.get(i).toString();
+            Vegetable vegetable = vegetables.get(i);
+            result += vegetable.getName() + ", калорії = " + vegetable.getCalories();
             result += "\n";
         }
 

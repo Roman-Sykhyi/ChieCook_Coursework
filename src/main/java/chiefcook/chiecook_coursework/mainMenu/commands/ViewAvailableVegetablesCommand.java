@@ -23,7 +23,7 @@ public class ViewAvailableVegetablesCommand implements IMenuCommand {
     }
 
     @Override
-    public void execute(List<String> params) {
+    public void execute() {
         try {
             Stage stage = new Stage();
             stage.initModality(Modality.APPLICATION_MODAL);

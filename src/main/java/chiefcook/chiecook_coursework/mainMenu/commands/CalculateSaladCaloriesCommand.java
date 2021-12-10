@@ -18,7 +18,7 @@ public class CalculateSaladCaloriesCommand implements IMenuCommand {
     }
 
     @Override
-    public void execute(List<String> params) {
+    public void execute() {
         System.out.println("Salad total calories: " + saladController.getSaladCalories());
         LOG.info("User calculating salad calories");
     }

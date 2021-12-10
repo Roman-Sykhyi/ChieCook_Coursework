@@ -101,7 +101,7 @@ public class Salad {
         String result = "";
 
         for(Map.Entry<Vegetable, Double> entry : ingredients.entrySet()) {
-            result += entry.getKey().getName() + " - " + entry.getValue() + " grams\n";
+            result += entry.getKey().getName() + " - " + entry.getValue() + " грам\n";
         }
 
         return result;

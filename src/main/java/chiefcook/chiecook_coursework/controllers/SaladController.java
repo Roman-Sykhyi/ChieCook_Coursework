@@ -29,6 +29,9 @@ public class SaladController {
     }
 
     public void addIngredient(Vegetable vegetable, Double weight) {
+        if (vegetable == null)
+            throw new NullPointerException();
+
         salad.addIngedient(vegetable, weight);
     }
 
@@ -37,7 +40,7 @@ public class SaladController {
     }
 
     public String getSaladInfo() {
-        String result = "Salad:\n";
+        String result = "";
         result += salad.toString();
         return result;
     }

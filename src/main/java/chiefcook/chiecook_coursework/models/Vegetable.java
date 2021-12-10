@@ -32,7 +32,6 @@ public class Vegetable {
 
     @Override
     public String toString() {
-        return  name +
-                ", calories = " + calories;
+        return  name;
     }
 }
