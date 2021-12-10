@@ -1,6 +1,5 @@
 package chiefcook.chiecook_coursework.controllers;
 
-import chiefcook.chiecook_coursework.builders.SaladBuilder;
 import chiefcook.chiecook_coursework.models.Salad;
 import chiefcook.chiecook_coursework.models.Vegetable;
 import org.apache.log4j.Logger;
@@ -12,20 +11,13 @@ public class SaladController {
     private static final Logger LOG = Logger.getLogger(SaladController.class.getSimpleName());
 
     private Salad salad;
-    private SaladBuilder saladBuilder;
 
     public SaladController() {
         salad = new Salad();
     }
 
-    public SaladController(SaladBuilder saladBuilder) {
-        setSaladBuilder(saladBuilder);
-        createSalad();
-    }
-
     public void createSalad() {
-        saladBuilder.createNewSalad();
-        salad = saladBuilder.getSalad();
+        salad = new Salad();
     }
 
     public void addIngredient(Vegetable vegetable, Double weight) {
@@ -37,6 +29,10 @@ public class SaladController {
 
     public void removeIngredient(String name) {
         salad.removeIngredient(name);
+    }
+
+    public List<Vegetable> getVegetables() {
+        return salad.getVegetables();
     }
 
     public String getSaladInfo() {
@@ -77,9 +73,5 @@ public class SaladController {
         }
 
         return result;
-    }
-
-    public void setSaladBuilder(SaladBuilder builder) {
-        saladBuilder = builder;
     }
 }

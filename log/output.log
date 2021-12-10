@@ -284,3 +284,31 @@
 2021-12-10 16:57:37,659  INFO VegetableController:55 - Successfully connected to database
 2021-12-10 16:57:37,704  INFO VegetableController:62 - Reading data from database
 2021-12-10 16:57:37,713  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-10 17:15:58,472  INFO VegetableController:55 - Successfully connected to database
+2021-12-10 17:15:58,515  INFO VegetableController:62 - Reading data from database
+2021-12-10 17:15:58,523  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-10 17:16:29,997  INFO VegetableController:55 - Successfully connected to database
+2021-12-10 17:16:30,040  INFO VegetableController:62 - Reading data from database
+2021-12-10 17:16:30,048  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-10 17:17:27,410  INFO VegetableController:55 - Successfully connected to database
+2021-12-10 17:17:27,458  INFO VegetableController:62 - Reading data from database
+2021-12-10 17:17:27,467  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-10 17:18:45,498  INFO VegetableController:55 - Successfully connected to database
+2021-12-10 17:18:45,547  INFO VegetableController:62 - Reading data from database
+2021-12-10 17:18:45,555  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-10 17:18:57,128  INFO AddIngredientController:84 - 100.0 грам Cabbage додано до салату
+2021-12-10 17:18:58,284  INFO ViewSaladCommand:27 - User views salad
+2021-12-10 17:18:59,322  INFO ViewSaladCommand:39 - User views available vegetables
+2021-12-10 17:19:04,203  INFO ViewSaladCommand:27 - User views salad
+2021-12-10 17:19:06,536  INFO ViewSaladCommand:39 - User views available vegetables
+2021-12-10 17:20:42,890  INFO VegetableController:55 - Successfully connected to database
+2021-12-10 17:20:42,936  INFO VegetableController:62 - Reading data from database
+2021-12-10 17:20:42,943  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-10 17:20:44,796  INFO ViewSaladCommand:27 - User views salad
+2021-12-10 17:20:45,970  INFO ViewSaladCommand:39 - User views available vegetables
+2021-12-10 17:20:49,729  INFO AddIngredientController:84 - 100.0 грам Carrot додано до салату
+2021-12-10 17:20:50,435  INFO ViewSaladCommand:27 - User views salad
+2021-12-10 17:20:51,385  INFO ViewSaladCommand:39 - User views available vegetables
+2021-12-10 17:20:52,860  INFO ViewSaladCommand:27 - User views salad
+2021-12-10 17:20:53,920  INFO ViewSaladCommand:39 - User views available vegetables
+2021-12-10 17:20:56,904  INFO ViewAvailableVegetablesCommand:37 - User views available vegetables
