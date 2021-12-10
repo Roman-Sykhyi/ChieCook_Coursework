@@ -1,3 +1,22 @@
-2021-12-09 19:37:45,195  INFO VegetableController:54 - Successfully connected to database
-2021-12-09 19:37:45,233  INFO VegetableController:61 - Reading data from database
-2021-12-09 19:37:45,240  INFO VegetableController:71 - Finished reading data from database. Closing the connection
+2021-12-10 09:34:39,477  INFO VegetableController:54 - Successfully connected to database
+2021-12-10 09:34:39,548  INFO VegetableController:61 - Reading data from database
+2021-12-10 09:34:39,581  INFO VegetableController:71 - Finished reading data from database. Closing the connection
+2021-12-10 13:54:40,220  INFO VegetableController:54 - Successfully connected to database
+2021-12-10 13:54:40,274  INFO VegetableController:61 - Reading data from database
+2021-12-10 13:54:40,314  INFO VegetableController:71 - Finished reading data from database. Closing the connection
+2021-12-10 13:57:14,380  INFO VegetableController:54 - Successfully connected to database
+2021-12-10 13:57:14,434  INFO VegetableController:61 - Reading data from database
+2021-12-10 13:57:14,446  INFO VegetableController:71 - Finished reading data from database. Closing the connection
+2021-12-10 14:00:58,174  INFO VegetableController:54 - Successfully connected to database
+2021-12-10 14:00:58,216  INFO VegetableController:61 - Reading data from database
+2021-12-10 14:00:58,225  INFO VegetableController:71 - Finished reading data from database. Closing the connection
+2021-12-10 14:04:46,581  INFO VegetableController:54 - Successfully connected to database
+2021-12-10 14:04:46,639  INFO VegetableController:61 - Reading data from database
+2021-12-10 14:04:46,647  INFO VegetableController:71 - Finished reading data from database. Closing the connection
+2021-12-10 14:11:12,298  INFO VegetableController:54 - Successfully connected to database
+2021-12-10 14:11:12,353  INFO VegetableController:61 - Reading data from database
+2021-12-10 14:11:12,361  INFO VegetableController:71 - Finished reading data from database. Closing the connection
+2021-12-10 14:11:48,930  INFO VegetableController:54 - Successfully connected to database
+2021-12-10 14:11:48,980  INFO VegetableController:61 - Reading data from database
+2021-12-10 14:11:48,990  INFO VegetableController:71 - Finished reading data from database. Closing the connection
+2021-12-10 14:11:54,848  INFO ViewAvailableVegetablesCommand:37 - User views available vegetables

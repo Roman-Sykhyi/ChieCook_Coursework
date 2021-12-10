@@ -27,4 +27,16 @@ public class MainMenu {
                 commands.put(ViewSaladVegetablesWithCaloriesInRange.NAME, new ViewSaladVegetablesWithCaloriesInRange(saladController));
                 commands.put(ExitCommand.NAME, new ExitCommand());
         }
+
+        public void execute(String command, List<String> params) {
+                IMenuCommand menuCommand = commands.get(command);
+
+                if(menuCommand == null) {
+                        System.out.println("Error executing command");
+                        System.out.println("Command " + command + " not found");
+                        return;
+                }
+
+                menuCommand.execute(params);
+        }
 }

@@ -2,28 +2,38 @@ package chiefcook.chiecook_coursework;
 
 import chiefcook.chiecook_coursework.controllers.SaladController;
 import chiefcook.chiecook_coursework.controllers.VegetableController;
+import chiefcook.chiecook_coursework.gui.controllers.HelloController;
+import chiefcook.chiecook_coursework.gui.controllers.MainMenuController;
 import chiefcook.chiecook_coursework.mainMenu.MainMenu;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class MainMenuApplication extends Application {
+
+    public static VegetableController vegetableController;
+    public static SaladController saladController;
+    public static MainMenu mainMenu;
+
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(MainMenuApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        stage.setResizable(false);
+
+        FXMLLoader fxmlLoader = new FXMLLoader(MainMenuApplication.class.getResource("main-menu.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 800, 640);
+        stage.setTitle("Chief Cook");
         stage.setScene(scene);
         stage.show();
     }
 
     public static void main(String[] args) {
-        VegetableController vegetableController = new VegetableController();
-        SaladController saladController = new SaladController();
-        MainMenu mainMenu = new MainMenu(vegetableController, saladController);
+        vegetableController = new VegetableController();
+        saladController = new SaladController();
+        mainMenu = new MainMenu(vegetableController, saladController);
         launch();
     }
 }
