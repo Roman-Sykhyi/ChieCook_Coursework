@@ -25,15 +25,14 @@ public class MainMenu {
                 commands.put(CalculateSaladCaloriesCommand.NAME, new CalculateSaladCaloriesCommand(saladController));
                 commands.put(SortVegetablesCommand.NAME, new SortVegetablesCommand(saladController));
                 commands.put(ViewSaladVegetablesWithCaloriesInRange.NAME, new ViewSaladVegetablesWithCaloriesInRange(saladController));
-                commands.put(ExitCommand.NAME, new ExitCommand());
         }
 
         public void execute(String command) {
                 IMenuCommand menuCommand = commands.get(command);
 
                 if(menuCommand == null) {
-                        System.out.println("Error executing command");
-                        System.out.println("Command " + command + " not found");
+                        LOG.error("Error executing command");
+                        LOG.error("Command " + command + " not found");
                         return;
                 }
 

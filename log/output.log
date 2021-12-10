@@ -278,3 +278,9 @@
 2021-12-10 16:48:08,715  INFO VegetableController:55 - Successfully connected to database
 2021-12-10 16:48:08,773  INFO VegetableController:62 - Reading data from database
 2021-12-10 16:48:08,783  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-10 16:56:36,172  INFO VegetableController:55 - Successfully connected to database
+2021-12-10 16:56:36,224  INFO VegetableController:62 - Reading data from database
+2021-12-10 16:56:36,244  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-10 16:57:37,659  INFO VegetableController:55 - Successfully connected to database
+2021-12-10 16:57:37,704  INFO VegetableController:62 - Reading data from database
+2021-12-10 16:57:37,713  INFO VegetableController:72 - Finished reading data from database. Closing the connection

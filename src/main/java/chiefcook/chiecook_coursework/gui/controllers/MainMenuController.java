@@ -59,6 +59,9 @@ public class MainMenuController implements Initializable {
     @FXML
     private Button viewVegetablesWithCaloriesInRangeBtn;
 
+    @FXML
+    private Button exitBtn;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         vegetableController = MainMenuApplication.vegetableController;
@@ -76,5 +79,7 @@ public class MainMenuController implements Initializable {
         addIgredientBtn.setOnAction(event -> {
             mainMenu.execute("addVegetable");
         });
+
+        exitBtn.setOnAction(event -> System.exit(0));
     }
 }

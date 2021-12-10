@@ -30,6 +30,8 @@ public class RemoveVegetableCommand implements IMenuCommand {
             LOG.error(e.getMessage());
             System.out.println("Error removing vegetable from salad");
         }*/
+
+
     }
 
     @Override
