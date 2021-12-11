@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="138.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VegetableWithCaloriesInRange">
+   <children>
+      <Label alignment="CENTER" layoutX="86.0" layoutY="14.0" prefHeight="55.0" prefWidth="457.0" text="Овочі в салаті з калорійністю в межах:">
+         <font>
+            <Font name="Consolas Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField layoutX="219.0" layoutY="76.0" prefHeight="26.0" prefWidth="75.0" />
+      <TextField layoutX="346.0" layoutY="76.0" prefHeight="26.0" prefWidth="75.0" />
+      <Label layoutX="179.0" layoutY="78.0" text="від:">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="315.0" layoutY="77.0" text="до:">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

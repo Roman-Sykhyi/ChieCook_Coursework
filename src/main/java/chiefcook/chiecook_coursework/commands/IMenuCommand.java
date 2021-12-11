@@ -1,4 +1,4 @@
-package chiefcook.chiecook_coursework.mainMenu.commands;
+package chiefcook.chiecook_coursework.commands;
 
 import java.util.List;
 

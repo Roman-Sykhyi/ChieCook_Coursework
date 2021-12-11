@@ -3,28 +3,20 @@ package chiefcook.chiecook_coursework.gui.controllers;
 import chiefcook.chiecook_coursework.MainMenuApplication;
 import chiefcook.chiecook_coursework.controllers.SaladController;
 import chiefcook.chiecook_coursework.controllers.VegetableController;
-import chiefcook.chiecook_coursework.mainMenu.MainMenu;
+import chiefcook.chiecook_coursework.controllers.CommandsController;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.paint.Color;
-import javafx.stage.Modality;
-import javafx.stage.Stage;
 
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class MainMenuController implements Initializable {
 
     private VegetableController vegetableController;
     private SaladController saladController;
-    private MainMenu mainMenu;
+    private CommandsController commandsController;
 
     @FXML
     private AnchorPane acnhorPane;
@@ -40,9 +32,6 @@ public class MainMenuController implements Initializable {
 
     @FXML
     private Button clearSaladBtn;
-
-    @FXML
-    private Label label;
 
     @FXML
     private Button removeIngredientBtn;
@@ -66,26 +55,30 @@ public class MainMenuController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         vegetableController = MainMenuApplication.vegetableController;
         saladController = MainMenuApplication.saladController;
-        mainMenu = MainMenuApplication.mainMenu;
+        commandsController = MainMenuApplication.commandsController;
 
         viewAvailableVegetablesBtn.setOnAction(event -> {
-            mainMenu.execute("vegetables");
+            commandsController.execute("vegetables");
         });
 
         viewSaladBtn.setOnAction(event -> {
-            mainMenu.execute("viewSalad");
+            commandsController.execute("viewSalad");
         });
 
         addIgredientBtn.setOnAction(event -> {
-            mainMenu.execute("addVegetable");
+            commandsController.execute("addVegetable");
         });
 
         removeIngredientBtn.setOnAction(event -> {
-            mainMenu.execute("removeVegetable");
+            commandsController.execute("removeVegetable");
         });
 
         calculateTotalCaloriesBtn.setOnAction(event -> {
-            mainMenu.execute("calculateCalories");
+            commandsController.execute("calculateCalories");
+        });
+
+        viewVegetablesWithCaloriesInRangeBtn.setOnAction(event -> {
+            commandsController.execute("viewVegetablesWithCaloriesInRange");
         });
 
         clearSaladBtn.setOnAction(event -> saladController.createSalad());

@@ -1,20 +1,18 @@
-package chiefcook.chiecook_coursework.mainMenu;
+package chiefcook.chiecook_coursework.controllers;
 
-import chiefcook.chiecook_coursework.controllers.SaladController;
-import chiefcook.chiecook_coursework.controllers.VegetableController;
-import chiefcook.chiecook_coursework.mainMenu.commands.*;
+import chiefcook.chiecook_coursework.commands.*;
 
 import org.apache.log4j.Logger;
 
 import java.util.*;
 
-public class MainMenu {
-        private static final Logger LOG = Logger.getLogger(MainMenu.class.getSimpleName());
+public class CommandsController {
+        private static final Logger LOG = Logger.getLogger(CommandsController.class.getSimpleName());
 
         private Map<String, IMenuCommand> commands;
         private Scanner scanner = new Scanner(System.in);
 
-        public MainMenu(VegetableController vegetableController, SaladController saladController) {
+        public CommandsController(VegetableController vegetableController, SaladController saladController) {
                 commands = new LinkedHashMap<>();
 
                 commands.put(ViewAvailableVegetablesCommand.NAME, new ViewAvailableVegetablesCommand(vegetableController));

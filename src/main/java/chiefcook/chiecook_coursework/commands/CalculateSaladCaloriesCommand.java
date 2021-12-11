@@ -1,4 +1,4 @@
-package chiefcook.chiecook_coursework.mainMenu.commands;
+package chiefcook.chiecook_coursework.commands;
 
 import chiefcook.chiecook_coursework.MainMenuApplication;
 import chiefcook.chiecook_coursework.controllers.SaladController;
@@ -8,8 +8,6 @@ import javafx.scene.Scene;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import org.apache.log4j.Logger;
-
-import java.util.List;
 
 public class CalculateSaladCaloriesCommand implements IMenuCommand {
     private static final Logger LOG = Logger.getLogger(CalculateSaladCaloriesCommand.class.getSimpleName());

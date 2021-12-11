@@ -1,10 +1,8 @@
-package chiefcook.chiecook_coursework.mainMenu.commands;
+package chiefcook.chiecook_coursework.commands;
 
 import chiefcook.chiecook_coursework.controllers.SaladController;
 
 import org.apache.log4j.Logger;
-
-import java.util.List;
 
 public class SortVegetablesCommand implements IMenuCommand {
     private static final Logger LOG = Logger.getLogger(SortVegetablesCommand.class.getSimpleName());

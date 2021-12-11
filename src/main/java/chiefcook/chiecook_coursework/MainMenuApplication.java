@@ -2,7 +2,7 @@ package chiefcook.chiecook_coursework;
 
 import chiefcook.chiecook_coursework.controllers.SaladController;
 import chiefcook.chiecook_coursework.controllers.VegetableController;
-import chiefcook.chiecook_coursework.mainMenu.MainMenu;
+import chiefcook.chiecook_coursework.controllers.CommandsController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -14,7 +14,7 @@ public class MainMenuApplication extends Application {
 
     public static VegetableController vegetableController;
     public static SaladController saladController;
-    public static MainMenu mainMenu;
+    public static CommandsController commandsController;
 
     @Override
     public void start(Stage stage) throws IOException {
@@ -30,7 +30,7 @@ public class MainMenuApplication extends Application {
     public static void main(String[] args) {
         vegetableController = new VegetableController();
         saladController = new SaladController();
-        mainMenu = new MainMenu(vegetableController, saladController);
+        commandsController = new CommandsController(vegetableController, saladController);
         launch();
     }
 }

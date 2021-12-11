@@ -17,3 +17,6 @@
 2021-12-11 09:37:19,448 ERROR CalculateSaladCaloriesCommand:37 - Error opening SaladCalories window
 2021-12-11 09:37:19,448 ERROR CalculateSaladCaloriesCommand:38 - Location is not set.
 2021-12-11 09:37:19,450  INFO CalculateSaladCaloriesCommand:43 - User calculating salad calories
+2021-12-11 09:38:18,670  INFO VegetableController:55 - Successfully connected to database
+2021-12-11 09:38:18,721  INFO VegetableController:62 - Reading data from database
+2021-12-11 09:38:18,731  INFO VegetableController:72 - Finished reading data from database. Closing the connection

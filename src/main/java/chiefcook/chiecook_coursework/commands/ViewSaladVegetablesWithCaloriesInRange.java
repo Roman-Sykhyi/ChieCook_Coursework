@@ -1,10 +1,7 @@
-package chiefcook.chiecook_coursework.mainMenu.commands;
+package chiefcook.chiecook_coursework.commands;
 
 import chiefcook.chiecook_coursework.controllers.SaladController;
-import chiefcook.chiecook_coursework.models.Vegetable;
 import org.apache.log4j.Logger;
-
-import java.util.List;
 
 public class ViewSaladVegetablesWithCaloriesInRange implements IMenuCommand {
     private static final Logger LOG = Logger.getLogger(ViewSaladVegetablesWithCaloriesInRange.class.getSimpleName());
