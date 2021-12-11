@@ -28,9 +28,6 @@ public class AddIngredientController implements Initializable {
     private Button addBtn;
 
     @FXML
-    private Button backBtn;
-
-    @FXML
     private ComboBox<Vegetable> comboBox;
 
     @FXML
@@ -44,11 +41,8 @@ public class AddIngredientController implements Initializable {
         vegetableController = MainMenuApplication.vegetableController;
         saladController = MainMenuApplication.saladController;
 
-        backBtn.setOnAction(event -> closeWindow());
-
         addBtn.setOnAction(event -> {
-            if(addIngredient())
-                closeWindow();
+            addIngredient();
         });
 
         weightInputField.focusedProperty().addListener((arg0, oldValue, newValue) -> {
@@ -63,7 +57,7 @@ public class AddIngredientController implements Initializable {
         comboBox.setItems(list);
     }
 
-    private boolean addIngredient() {
+    private void addIngredient() {
         Vegetable vegetable = comboBox.getValue();
         double weight;
 
@@ -74,14 +68,10 @@ public class AddIngredientController implements Initializable {
             String message = weight + " грам " + vegetable.getName() + " додано до салату";
             showDialogWindow(message, Alert.AlertType.INFORMATION);
             LOG.info(message);
-
-            return true;
         } catch (NumberFormatException e) {
             showDialogWindow("Помилка зчитування ваги. Вводіть ціле число.", Alert.AlertType.ERROR);
-            return false;
         } catch (NullPointerException e) {
             showDialogWindow("Ви не вибрали овоч", Alert.AlertType.ERROR);
-            return false;
         }
     }
 
@@ -100,10 +90,5 @@ public class AddIngredientController implements Initializable {
             alert.getDialogPane().setHeaderText("Успіх");
 
         alert.showAndWait();
-    }
-
-    private void closeWindow() {
-        Stage stage = (Stage)backBtn.getScene().getWindow();
-        stage.close();
     }
 }

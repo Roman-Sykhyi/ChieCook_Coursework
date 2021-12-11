@@ -77,3 +77,35 @@
 2021-12-11 10:35:31,490  INFO VegetableController:72 - Finished reading data from database. Closing the connection
 2021-12-11 10:35:44,174  INFO ViewSaladVegetablesWithCaloriesInRange:27 - User views vegetables in salad with calories in range
 2021-12-11 10:35:47,614  INFO ViewSaladVegetablesWithCaloriesInRange:27 - User views vegetables in salad with calories in range
+2021-12-11 10:46:07,222  INFO VegetableController:55 - Successfully connected to database
+2021-12-11 10:46:07,273  INFO VegetableController:62 - Reading data from database
+2021-12-11 10:46:07,284  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-11 10:46:11,682  INFO ViewSaladVegetablesWithCaloriesInRange:28 - User views vegetables in salad with calories in range
+2021-12-11 10:46:14,835  INFO ViewSaladCommand:19 - User views salad
+2021-12-11 10:46:15,837  INFO ViewSaladCommand:31 - User views available vegetables
+2021-12-11 10:46:41,911  INFO ViewAvailableVegetablesCommand:29 - User views available vegetables
+2021-12-11 10:46:42,419  INFO ViewSaladCommand:19 - User views salad
+2021-12-11 10:46:43,535  INFO ViewSaladCommand:31 - User views available vegetables
+2021-12-11 10:46:50,015  INFO CalculateSaladCaloriesCommand:35 - User calculating salad calories
+2021-12-11 10:46:54,447  INFO ViewSaladVegetablesWithCaloriesInRange:28 - User views vegetables in salad with calories in range
+2021-12-11 10:47:19,866  INFO ViewSaladCommand:19 - User views salad
+2021-12-11 10:47:21,047  INFO ViewSaladCommand:31 - User views available vegetables
+2021-12-11 10:47:21,650  INFO ViewSaladCommand:19 - User views salad
+2021-12-11 10:47:22,417  INFO ViewSaladCommand:31 - User views available vegetables
+2021-12-11 10:47:23,415  INFO ViewAvailableVegetablesCommand:29 - User views available vegetables
+2021-12-11 10:47:25,207  INFO CalculateSaladCaloriesCommand:35 - User calculating salad calories
+2021-12-11 10:47:26,359  INFO ViewSaladVegetablesWithCaloriesInRange:28 - User views vegetables in salad with calories in range
+2021-12-11 10:47:30,048  INFO ViewSaladVegetablesWithCaloriesInRange:28 - User views vegetables in salad with calories in range
+2021-12-11 10:47:30,730  INFO ViewSaladCommand:19 - User views salad
+2021-12-11 10:47:32,831  INFO ViewSaladCommand:31 - User views available vegetables
+2021-12-11 10:47:35,567  INFO ViewAvailableVegetablesCommand:29 - User views available vegetables
+2021-12-11 10:47:35,954  INFO ViewSaladCommand:19 - User views salad
+2021-12-11 10:47:36,912  INFO ViewSaladCommand:31 - User views available vegetables
+2021-12-11 10:48:41,358  INFO AddIngredientController:76 - 100.0 грам Cabbage додано до салату
+2021-12-11 10:49:14,150  INFO VegetableController:55 - Successfully connected to database
+2021-12-11 10:49:14,196  INFO VegetableController:62 - Reading data from database
+2021-12-11 10:49:14,204  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-11 10:49:19,887  INFO AddIngredientController:71 - 100.0 грам Carrot додано до салату
+2021-12-11 10:49:22,943  INFO AddIngredientController:71 - 100.0 грам Broccoli додано до салату
+2021-12-11 10:49:24,154  INFO ViewSaladCommand:19 - User views salad
+2021-12-11 10:49:25,097  INFO ViewSaladCommand:31 - User views available vegetables

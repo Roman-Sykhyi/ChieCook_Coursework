@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="214.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chiefcook.chiecook_coursework.gui.controllers.AddIngredientController">
    <children>
       <Label fx:id="label" alignment="CENTER" layoutX="177.0" layoutY="22.0" prefHeight="50.0" prefWidth="246.0" text="Додавання овочів до салату" textAlignment="CENTER">
@@ -32,12 +31,7 @@
             <Font name="Consolas Bold" size="15.0" />
          </font>
       </Label>
-      <Button fx:id="addBtn" layoutX="190.0" layoutY="162.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="Додати">
-         <font>
-            <Font name="Consolas Bold" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="backBtn" layoutX="340.0" layoutY="162.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="Назад">
+      <Button fx:id="addBtn" layoutX="258.0" layoutY="164.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="Додати">
          <font>
             <Font name="Consolas Bold" size="12.0" />
          </font>
