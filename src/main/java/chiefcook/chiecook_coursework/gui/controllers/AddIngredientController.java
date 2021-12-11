@@ -36,15 +36,6 @@ public class AddIngredientController implements Initializable {
     private Label label;
 
     @FXML
-    private Label label1;
-
-    @FXML
-    private Label label11;
-
-    @FXML
-    private Label label111;
-
-    @FXML
     private TextField weightInputField;
 
     @Override

@@ -1,6 +1,11 @@
 package chiefcook.chiecook_coursework.commands;
 
-import chiefcook.chiecook_coursework.controllers.SaladController;
+import chiefcook.chiecook_coursework.MainMenuApplication;
+
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 import org.apache.log4j.Logger;
 
 public class ViewSaladVegetablesWithCaloriesInRange implements IMenuCommand {
@@ -10,21 +15,22 @@ public class ViewSaladVegetablesWithCaloriesInRange implements IMenuCommand {
 
     @Override
     public void execute() {
-        /*System.out.println("Vegetables in salad with calories in range " + params.get(0) + " to " + params.get(1) + ":");
-
         try {
-            List<Vegetable> vegetables = saladController
-                    .getVegetablesWithCaloriesInRange(Double.parseDouble(params.get(0)), Double.parseDouble(params.get(1)));
+            Stage stage = new Stage();
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.setResizable(false);
 
-            for(Vegetable vegetable : vegetables) {
-                System.out.println(vegetable.toString());
-            }
+            FXMLLoader fxmlLoader = new FXMLLoader(MainMenuApplication.class.getResource("vegetables-with-calories-in-range.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 600, 322);
+            stage.setScene(scene);
+            stage.showAndWait();
+            LOG.info("User views vegetables in salad with calories in range");
 
-            LOG.info("User views salad vegetables with calories in range [" + params.get(0) + "; " + params.get(1) + "]");
         } catch (Exception e) {
-            LOG.error("Error finding vegetables with calories in a given range");
+            LOG.error("Error opening ViewVegetablesWithCaloriesInRange window");
             LOG.error(e.getMessage());
-            System.out.println("Error finding vegetables");
-        }*/
+
+            e.printStackTrace();
+        }
     }
 }

@@ -20,3 +20,60 @@
 2021-12-11 09:38:18,670  INFO VegetableController:55 - Successfully connected to database
 2021-12-11 09:38:18,721  INFO VegetableController:62 - Reading data from database
 2021-12-11 09:38:18,731  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-11 10:05:51,285  INFO VegetableController:55 - Successfully connected to database
+2021-12-11 10:05:51,412  INFO VegetableController:62 - Reading data from database
+2021-12-11 10:05:51,421  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-11 10:08:06,396  INFO VegetableController:55 - Successfully connected to database
+2021-12-11 10:08:06,449  INFO VegetableController:62 - Reading data from database
+2021-12-11 10:08:06,460  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-11 10:08:07,972 ERROR ViewSaladVegetablesWithCaloriesInRange:46 - Error opening ViewVegetablesWithCaloriesInRange window
+2021-12-11 10:08:07,973 ERROR ViewSaladVegetablesWithCaloriesInRange:47 - 
+/E:/pp_labs/ChieCook_Coursework/target/classes/chiefcook/chiecook_coursework/vegetables-with-calories-in-range.fxml:9
+
+2021-12-11 10:08:51,644  INFO VegetableController:55 - Successfully connected to database
+2021-12-11 10:08:51,699  INFO VegetableController:62 - Reading data from database
+2021-12-11 10:08:51,708  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-11 10:08:58,167  INFO ViewSaladVegetablesWithCaloriesInRange:43 - User views vegetables in salad with calories in range
+2021-12-11 10:29:11,827  INFO VegetableController:55 - Successfully connected to database
+2021-12-11 10:29:11,870  INFO VegetableController:62 - Reading data from database
+2021-12-11 10:29:11,878  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-11 10:29:15,488  INFO ViewSaladVegetablesWithCaloriesInRange:27 - User views vegetables in salad with calories in range
+2021-12-11 10:29:34,834  INFO VegetableController:55 - Successfully connected to database
+2021-12-11 10:29:34,890  INFO VegetableController:62 - Reading data from database
+2021-12-11 10:29:34,901  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-11 10:29:37,178  INFO ViewSaladCommand:18 - User views salad
+2021-12-11 10:29:38,007  INFO ViewSaladCommand:30 - User views available vegetables
+2021-12-11 10:29:45,000  INFO ViewAvailableVegetablesCommand:29 - User views available vegetables
+2021-12-11 10:29:45,689  INFO ViewSaladCommand:18 - User views salad
+2021-12-11 10:29:46,942  INFO ViewSaladCommand:30 - User views available vegetables
+2021-12-11 10:29:50,879  INFO AddIngredientController:75 - 100.0 грам Carrot додано до салату
+2021-12-11 10:29:54,510  INFO AddIngredientController:75 - 100.0 грам Garlic додано до салату
+2021-12-11 10:29:55,049  INFO ViewSaladCommand:18 - User views salad
+2021-12-11 10:29:56,166  INFO ViewSaladCommand:30 - User views available vegetables
+2021-12-11 10:29:59,881  INFO ViewAvailableVegetablesCommand:29 - User views available vegetables
+2021-12-11 10:30:04,647  INFO AddIngredientController:75 - 100.0 грам Cucumber додано до салату
+2021-12-11 10:30:28,800  INFO ViewSaladVegetablesWithCaloriesInRange:27 - User views vegetables in salad with calories in range
+2021-12-11 10:30:57,254  INFO VegetableController:55 - Successfully connected to database
+2021-12-11 10:30:57,306  INFO VegetableController:62 - Reading data from database
+2021-12-11 10:30:57,317  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-11 10:31:11,990  INFO AddIngredientController:75 - 100.0 грам Garlic додано до салату
+2021-12-11 10:33:15,137  INFO VegetableController:55 - Successfully connected to database
+2021-12-11 10:33:15,195  INFO VegetableController:62 - Reading data from database
+2021-12-11 10:33:15,203  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-11 10:33:20,040  INFO AddIngredientController:75 - 100.0 грам Garlic додано до салату
+2021-12-11 10:33:45,912  INFO ViewSaladVegetablesWithCaloriesInRange:27 - User views vegetables in salad with calories in range
+2021-12-11 10:34:15,827  INFO VegetableController:55 - Successfully connected to database
+2021-12-11 10:34:15,885  INFO VegetableController:62 - Reading data from database
+2021-12-11 10:34:15,896  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-11 10:34:29,038  INFO ViewSaladVegetablesWithCaloriesInRange:27 - User views vegetables in salad with calories in range
+2021-12-11 10:34:36,769  INFO VegetableController:55 - Successfully connected to database
+2021-12-11 10:34:36,809  INFO VegetableController:62 - Reading data from database
+2021-12-11 10:34:36,818  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-11 10:34:58,430  INFO ViewSaladVegetablesWithCaloriesInRange:27 - User views vegetables in salad with calories in range
+2021-12-11 10:35:01,655  INFO AddIngredientController:75 - 100.0 грам Garlic додано до салату
+2021-12-11 10:35:12,469  INFO ViewSaladVegetablesWithCaloriesInRange:27 - User views vegetables in salad with calories in range
+2021-12-11 10:35:31,413  INFO VegetableController:55 - Successfully connected to database
+2021-12-11 10:35:31,477  INFO VegetableController:62 - Reading data from database
+2021-12-11 10:35:31,490  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-11 10:35:44,174  INFO ViewSaladVegetablesWithCaloriesInRange:27 - User views vegetables in salad with calories in range
+2021-12-11 10:35:47,614  INFO ViewSaladVegetablesWithCaloriesInRange:27 - User views vegetables in salad with calories in range
