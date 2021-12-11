@@ -29,26 +29,25 @@ public class RemoveVegetableController implements Initializable {
     private ComboBox<Vegetable> comboBox;
 
     @FXML
-    private Button backBtn;
-
-    @FXML
     private Button removeBtn;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         saladController = MainMenuApplication.saladController;
 
-        ObservableList<Vegetable> list = FXCollections.observableArrayList(saladController.getVegetables());
-        comboBox.setItems(list);
+        updateComboBox();
 
         removeBtn.setOnAction(event -> {
-            if(removeIngredient())
-                closeWindow();
+            removeIngredient();
         });
-        backBtn.setOnAction(event -> closeWindow());
     }
 
-    private boolean removeIngredient() {
+    private void updateComboBox() {
+        ObservableList<Vegetable> list = FXCollections.observableArrayList(saladController.getVegetables());
+        comboBox.setItems(list);
+    }
+
+    private void removeIngredient() {
         Vegetable vegetable = comboBox.getValue();
 
         if(vegetable == null) {
@@ -63,17 +62,25 @@ public class RemoveVegetableController implements Initializable {
             alert.getDialogPane().setHeaderText("Помилка");
 
             alert.showAndWait();
-
-            return false;
+            return;
         }
 
         saladController.removeIngredient(vegetable.getName());
-        LOG.info("User removed " + vegetable.getName() + " from salad");
-        return true;
-    }
 
-    private void closeWindow() {
-        Stage stage = (Stage)backBtn.getScene().getWindow();
-        stage.close();
+        Stage stage = (Stage)comboBox.getScene().getWindow();
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION, "");
+
+        alert.initModality(Modality.APPLICATION_MODAL);
+        alert.initOwner(stage);
+
+        alert.getDialogPane().setContentText(vegetable.getName() + " видалено з салату");
+        alert.getDialogPane().setHeaderText("Помилка");
+
+        alert.showAndWait();
+
+        updateComboBox();
+
+        LOG.info("User removed " + vegetable.getName() + " from salad");
     }
 }

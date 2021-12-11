@@ -109,3 +109,36 @@
 2021-12-11 10:49:22,943  INFO AddIngredientController:71 - 100.0 грам Broccoli додано до салату
 2021-12-11 10:49:24,154  INFO ViewSaladCommand:19 - User views salad
 2021-12-11 10:49:25,097  INFO ViewSaladCommand:31 - User views available vegetables
+2021-12-11 10:50:13,959  INFO VegetableController:55 - Successfully connected to database
+2021-12-11 10:50:14,003  INFO VegetableController:62 - Reading data from database
+2021-12-11 10:50:14,011  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-11 10:50:15,842  INFO ViewAvailableVegetablesCommand:29 - User views available vegetables
+2021-12-11 10:50:16,267  INFO ViewSaladCommand:19 - User views salad
+2021-12-11 10:50:17,025  INFO ViewSaladCommand:31 - User views available vegetables
+2021-12-11 10:50:18,360  INFO CalculateSaladCaloriesCommand:35 - User calculating salad calories
+2021-12-11 10:50:19,687  INFO ViewSaladVegetablesWithCaloriesInRange:28 - User views vegetables in salad with calories in range
+2021-12-11 10:51:28,616  INFO VegetableController:55 - Successfully connected to database
+2021-12-11 10:51:28,666  INFO VegetableController:62 - Reading data from database
+2021-12-11 10:51:28,674  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-11 10:51:33,855  INFO AddIngredientController:70 - 100.0 грам Cabbage додано до салату
+2021-12-11 10:51:35,751  INFO AddIngredientController:70 - 100.0 грам Broccoli додано до салату
+2021-12-11 10:51:38,699  INFO RemoveVegetableController:64 - User removed Cabbage from salad
+2021-12-11 10:52:36,346  INFO VegetableController:55 - Successfully connected to database
+2021-12-11 10:52:36,387  INFO VegetableController:62 - Reading data from database
+2021-12-11 10:52:36,394  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-11 10:53:11,961  INFO VegetableController:55 - Successfully connected to database
+2021-12-11 10:53:12,014  INFO VegetableController:62 - Reading data from database
+2021-12-11 10:53:12,022  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-11 10:53:20,248  INFO AddIngredientController:70 - 100.0 грам Broccoli додано до салату
+2021-12-11 10:53:22,025  INFO AddIngredientController:70 - 100.0 грам Cabbage додано до салату
+2021-12-11 10:53:28,879  INFO RemoveVegetableController:78 - User removed Broccoli from salad
+2021-12-11 10:53:32,167  INFO RemoveVegetableController:78 - User removed Cabbage from salad
+2021-12-11 10:54:25,582  INFO VegetableController:55 - Successfully connected to database
+2021-12-11 10:54:25,635  INFO VegetableController:62 - Reading data from database
+2021-12-11 10:54:25,645  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-11 10:54:32,856  INFO AddIngredientController:70 - 100.0 грам Broccoli додано до салату
+2021-12-11 10:54:36,832  INFO AddIngredientController:70 - 100.0 грам Onion додано до салату
+2021-12-11 10:54:39,408  INFO AddIngredientController:70 - 100.0 грам Pumpkin додано до салату
+2021-12-11 10:54:43,337  INFO RemoveVegetableController:84 - User removed Broccoli from salad
+2021-12-11 10:54:45,528  INFO RemoveVegetableController:84 - User removed Onion from salad
+2021-12-11 10:54:48,255  INFO RemoveVegetableController:84 - User removed Pumpkin from salad
