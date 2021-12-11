@@ -9,12 +9,6 @@ public class SortVegetablesCommand implements IMenuCommand {
 
     public final static String NAME = "sortVegetables";
 
-    private SaladController saladController;
-
-    public SortVegetablesCommand(SaladController saladController) {
-        this.saladController = saladController;
-    }
-
     @Override
     public void execute() {
         /*try {
@@ -39,10 +33,5 @@ public class SortVegetablesCommand implements IMenuCommand {
             LOG.error(e.getMessage());
             System.out.println("Error sorting vegetables");
         }*/
-    }
-
-    @Override
-    public String getHelp() {
-        return "Sorts vegetables in salad by given parameter\nUse \'sortVegetables [sortType]\' sortType: {name, weight, calories}";
     }
 }

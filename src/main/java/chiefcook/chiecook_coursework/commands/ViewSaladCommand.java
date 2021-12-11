@@ -13,12 +13,6 @@ public class ViewSaladCommand implements IMenuCommand {
 
     public static final String NAME = "viewSalad";
 
-    private SaladController saladController;
-
-    public ViewSaladCommand(SaladController saladController) {
-        this.saladController = saladController;
-    }
-
     @Override
     public void execute() {
         LOG.info("User views salad");
@@ -40,10 +34,5 @@ public class ViewSaladCommand implements IMenuCommand {
 
             e.printStackTrace();
         }
-    }
-
-    @Override
-    public String getHelp() {
-        return "Shows salad ingredients\nUse: \'viewSalad\' with no parameters";
     }
 }

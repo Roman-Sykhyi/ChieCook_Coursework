@@ -14,12 +14,6 @@ public class ViewAvailableVegetablesCommand implements IMenuCommand {
 
     public final static String NAME = "vegetables";
 
-    private VegetableController vegetableController;
-
-    public ViewAvailableVegetablesCommand(VegetableController vegetableController) {
-        this.vegetableController = vegetableController;
-    }
-
     @Override
     public void execute() {
         try {
@@ -39,10 +33,5 @@ public class ViewAvailableVegetablesCommand implements IMenuCommand {
 
             e.printStackTrace();
         }
-    }
-
-    @Override
-    public String getHelp() {
-        return "Shows list of all available vegetables\nUse: \'vegetables\' with no parameters";
     }
 }

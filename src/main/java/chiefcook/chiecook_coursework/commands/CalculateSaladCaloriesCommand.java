@@ -14,12 +14,6 @@ public class CalculateSaladCaloriesCommand implements IMenuCommand {
 
     public final static String NAME = "calculateCalories";
 
-    private SaladController saladController;
-
-    public CalculateSaladCaloriesCommand(SaladController saladController) {
-        this.saladController = saladController;
-    }
-
     @Override
     public void execute() {
         try {
@@ -39,10 +33,5 @@ public class CalculateSaladCaloriesCommand implements IMenuCommand {
         }
 
         LOG.info("User calculating salad calories");
-    }
-
-    @Override
-    public String getHelp() {
-        return "Show total salad calories\nUse: \'calculateCalories\' with no parameters";
     }
 }

@@ -15,14 +15,13 @@ public class CommandsController {
         public CommandsController(VegetableController vegetableController, SaladController saladController) {
                 commands = new LinkedHashMap<>();
 
-                commands.put(ViewAvailableVegetablesCommand.NAME, new ViewAvailableVegetablesCommand(vegetableController));
-                commands.put(CreateSaladCommand.NAME, new CreateSaladCommand(saladController));
-                commands.put(ViewSaladCommand.NAME, new ViewSaladCommand(saladController));
-                commands.put(AddVegetableCommand.NAME, new AddVegetableCommand(vegetableController, saladController));
-                commands.put(RemoveVegetableCommand.NAME, new RemoveVegetableCommand(saladController));
-                commands.put(CalculateSaladCaloriesCommand.NAME, new CalculateSaladCaloriesCommand(saladController));
-                commands.put(SortVegetablesCommand.NAME, new SortVegetablesCommand(saladController));
-                commands.put(ViewSaladVegetablesWithCaloriesInRange.NAME, new ViewSaladVegetablesWithCaloriesInRange(saladController));
+                commands.put(ViewAvailableVegetablesCommand.NAME, new ViewAvailableVegetablesCommand());
+                commands.put(ViewSaladCommand.NAME, new ViewSaladCommand());
+                commands.put(AddVegetableCommand.NAME, new AddVegetableCommand());
+                commands.put(RemoveVegetableCommand.NAME, new RemoveVegetableCommand());
+                commands.put(CalculateSaladCaloriesCommand.NAME, new CalculateSaladCaloriesCommand());
+                commands.put(SortVegetablesCommand.NAME, new SortVegetablesCommand());
+                commands.put(ViewSaladVegetablesWithCaloriesInRange.NAME, new ViewSaladVegetablesWithCaloriesInRange());
         }
 
         public void execute(String command) {

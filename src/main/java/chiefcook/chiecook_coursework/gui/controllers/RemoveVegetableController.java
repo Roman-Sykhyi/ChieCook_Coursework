@@ -1,6 +1,7 @@
 package chiefcook.chiecook_coursework.gui.controllers;
 
 import chiefcook.chiecook_coursework.MainMenuApplication;
+import chiefcook.chiecook_coursework.commands.RemoveVegetableCommand;
 import chiefcook.chiecook_coursework.controllers.SaladController;
 import chiefcook.chiecook_coursework.models.Vegetable;
 import javafx.collections.FXCollections;
@@ -12,11 +13,14 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import org.apache.log4j.Logger;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class RemoveVegetableController implements Initializable {
+
+    private static final Logger LOG = Logger.getLogger(RemoveVegetableController.class.getSimpleName());
 
     private SaladController saladController;
 
@@ -63,6 +67,7 @@ public class RemoveVegetableController implements Initializable {
         }
 
         saladController.removeIngredient(vegetable.getName());
+        LOG.info("User removed " + vegetable.getName() + " from salad");
         return true;
     }
 

@@ -8,12 +8,6 @@ public class ViewSaladVegetablesWithCaloriesInRange implements IMenuCommand {
 
     public final static String NAME = "viewVegetablesWithCaloriesInRange";
 
-    private SaladController saladController;
-
-    public ViewSaladVegetablesWithCaloriesInRange(SaladController saladController) {
-        this.saladController = saladController;
-    }
-
     @Override
     public void execute() {
         /*System.out.println("Vegetables in salad with calories in range " + params.get(0) + " to " + params.get(1) + ":");
@@ -32,10 +26,5 @@ public class ViewSaladVegetablesWithCaloriesInRange implements IMenuCommand {
             LOG.error(e.getMessage());
             System.out.println("Error finding vegetables");
         }*/
-    }
-
-    @Override
-    public String getHelp() {
-        return "Show vegetables in salad that have calories in a given range\nUse: \'viewVegetablesWithCaloriesInRange [leftBound] [rightBound]\'";
     }
 }

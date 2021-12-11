@@ -15,14 +15,6 @@ public class AddVegetableCommand implements IMenuCommand {
 
     public final static String NAME = "addVegetable";
 
-    private VegetableController vegetableController;
-    private SaladController saladController;
-
-    public AddVegetableCommand(VegetableController vegetableController, SaladController saladController) {
-        this.vegetableController = vegetableController;
-        this.saladController = saladController;
-    }
-
     @Override
     public void execute() {
         try {
@@ -35,12 +27,9 @@ public class AddVegetableCommand implements IMenuCommand {
             stage.setScene(scene);
             stage.showAndWait();
         } catch (Exception e) {
+            LOG.error("Error opening AddIngredient window");
+            LOG.error(e.getMessage());
             e.printStackTrace();
         }
-    }
-
-    @Override
-    public String getHelp() {
-        return "Adds vegetable to salad\nUse: \'addVegetable [name] [weight]\'";
     }
 }
