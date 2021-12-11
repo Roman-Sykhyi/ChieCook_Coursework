@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+
 import org.apache.log4j.Logger;
 
 public class ViewSaladVegetablesWithCaloriesInRange implements IMenuCommand {

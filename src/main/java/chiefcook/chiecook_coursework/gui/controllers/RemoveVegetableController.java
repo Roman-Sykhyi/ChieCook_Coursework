@@ -1,9 +1,9 @@
 package chiefcook.chiecook_coursework.gui.controllers;
 
 import chiefcook.chiecook_coursework.MainMenuApplication;
-import chiefcook.chiecook_coursework.commands.RemoveVegetableCommand;
 import chiefcook.chiecook_coursework.controllers.SaladController;
 import chiefcook.chiecook_coursework.models.Vegetable;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -13,6 +13,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+
 import org.apache.log4j.Logger;
 
 import java.net.URL;

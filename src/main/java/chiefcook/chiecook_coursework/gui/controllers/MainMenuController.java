@@ -2,12 +2,12 @@ package chiefcook.chiecook_coursework.gui.controllers;
 
 import chiefcook.chiecook_coursework.MainMenuApplication;
 import chiefcook.chiecook_coursework.controllers.SaladController;
-import chiefcook.chiecook_coursework.controllers.VegetableController;
 import chiefcook.chiecook_coursework.controllers.CommandsController;
+
+import chiefcook.chiecook_coursework.controllers.VegetableController;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.layout.AnchorPane;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -19,13 +19,7 @@ public class MainMenuController implements Initializable {
     private CommandsController commandsController;
 
     @FXML
-    private AnchorPane acnhorPane;
-
-    @FXML
     private Button addIgredientBtn;
-
-    @FXML
-    private AnchorPane anchorPane2;
 
     @FXML
     private Button calculateTotalCaloriesBtn;

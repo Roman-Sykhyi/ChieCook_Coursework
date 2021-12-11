@@ -30,7 +30,7 @@ public class MainMenuApplication extends Application {
     public static void main(String[] args) {
         vegetableController = new VegetableController();
         saladController = new SaladController();
-        commandsController = new CommandsController(vegetableController, saladController);
+        commandsController = new CommandsController();
         launch();
     }
 }

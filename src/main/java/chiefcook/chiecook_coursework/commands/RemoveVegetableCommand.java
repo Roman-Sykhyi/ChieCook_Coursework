@@ -1,17 +1,15 @@
 package chiefcook.chiecook_coursework.commands;
 
 import chiefcook.chiecook_coursework.MainMenuApplication;
-import chiefcook.chiecook_coursework.controllers.SaladController;
 
-import chiefcook.chiecook_coursework.gui.controllers.RemoveVegetableController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+
 import org.apache.log4j.Logger;
 
 public class RemoveVegetableCommand implements IMenuCommand {
-
     private static final Logger LOG = Logger.getLogger(RemoveVegetableCommand.class.getSimpleName());
 
     public final static String NAME = "removeVegetable";

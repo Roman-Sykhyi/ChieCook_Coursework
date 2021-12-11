@@ -12,7 +12,7 @@ public class CommandsController {
         private Map<String, IMenuCommand> commands;
         private Scanner scanner = new Scanner(System.in);
 
-        public CommandsController(VegetableController vegetableController, SaladController saladController) {
+        public CommandsController() {
                 commands = new LinkedHashMap<>();
 
                 commands.put(ViewAvailableVegetablesCommand.NAME, new ViewAvailableVegetablesCommand());

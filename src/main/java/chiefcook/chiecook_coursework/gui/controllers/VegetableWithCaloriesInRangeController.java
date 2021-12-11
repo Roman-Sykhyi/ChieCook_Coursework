@@ -3,7 +3,7 @@ package chiefcook.chiecook_coursework.gui.controllers;
 import chiefcook.chiecook_coursework.MainMenuApplication;
 import chiefcook.chiecook_coursework.controllers.SaladController;
 import chiefcook.chiecook_coursework.models.Vegetable;
-import javafx.collections.ObservableList;
+
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
@@ -12,13 +12,15 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import org.apache.log4j.Logger;
 
 import java.net.URL;
-import java.util.Arrays;
 import java.util.List;
 import java.util.ResourceBundle;
 
 public class VegetableWithCaloriesInRangeController implements Initializable {
+
+    private static final Logger LOG = Logger.getLogger(VegetableWithCaloriesInRangeController.class.getSimpleName());
 
     private SaladController saladController;
 
@@ -70,6 +72,8 @@ public class VegetableWithCaloriesInRangeController implements Initializable {
         for (Vegetable item : items) {
             listView.getItems().add(item.getName() + " калорії = " + item.getCalories());
         }
+
+        LOG.info("User views vegetables with calories in range [" + leftBound + "; " + rightBound + "]");
     }
 
     private void warnIncorrectInput(String message) {

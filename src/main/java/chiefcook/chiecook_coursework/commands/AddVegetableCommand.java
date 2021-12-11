@@ -1,13 +1,12 @@
 package chiefcook.chiecook_coursework.commands;
 
 import chiefcook.chiecook_coursework.MainMenuApplication;
-import chiefcook.chiecook_coursework.controllers.SaladController;
-import chiefcook.chiecook_coursework.controllers.VegetableController;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+
 import org.apache.log4j.Logger;
 
 public class AddVegetableCommand implements IMenuCommand {

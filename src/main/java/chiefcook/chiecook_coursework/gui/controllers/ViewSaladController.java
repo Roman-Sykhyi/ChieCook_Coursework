@@ -2,7 +2,7 @@ package chiefcook.chiecook_coursework.gui.controllers;
 
 import chiefcook.chiecook_coursework.MainMenuApplication;
 import chiefcook.chiecook_coursework.controllers.SaladController;
-import chiefcook.chiecook_coursework.controllers.VegetableController;
+
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
