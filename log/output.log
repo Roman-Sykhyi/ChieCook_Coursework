@@ -142,3 +142,35 @@
 2021-12-11 10:54:43,337  INFO RemoveVegetableController:84 - User removed Broccoli from salad
 2021-12-11 10:54:45,528  INFO RemoveVegetableController:84 - User removed Onion from salad
 2021-12-11 10:54:48,255  INFO RemoveVegetableController:84 - User removed Pumpkin from salad
+2021-12-11 11:11:34,747  INFO VegetableController:55 - Successfully connected to database
+2021-12-11 11:11:34,798  INFO VegetableController:62 - Reading data from database
+2021-12-11 11:11:34,805  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-11 11:13:25,961  INFO VegetableController:55 - Successfully connected to database
+2021-12-11 11:13:26,003  INFO VegetableController:62 - Reading data from database
+2021-12-11 11:13:26,010  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-11 11:13:38,288  INFO SortVegetablesCommand:29 - User sort vegetables in salad
+2021-12-11 11:13:47,818  INFO AddIngredientController:70 - 100.0 грам Spinach додано до салату
+2021-12-11 11:13:51,577  INFO AddIngredientController:70 - 100.0 грам Garlic додано до салату
+2021-12-11 11:13:58,962  INFO AddIngredientController:70 - 50.0 грам Broccoli додано до салату
+2021-12-11 11:14:00,259  INFO ViewSaladCommand:19 - User views salad
+2021-12-11 11:14:02,104  INFO ViewSaladCommand:31 - User views available vegetables
+2021-12-11 11:14:06,168  INFO SortVegetablesCommand:29 - User sort vegetables in salad
+2021-12-11 11:14:06,651  INFO ViewSaladCommand:19 - User views salad
+2021-12-11 11:14:08,296  INFO ViewSaladCommand:31 - User views available vegetables
+2021-12-11 11:14:10,184  INFO ViewSaladVegetablesWithCaloriesInRange:28 - User views vegetables in salad with calories in range
+2021-12-11 11:14:13,570  INFO SortVegetablesCommand:29 - User sort vegetables in salad
+2021-12-11 11:14:13,940  INFO ViewSaladCommand:19 - User views salad
+2021-12-11 11:14:16,400  INFO ViewSaladCommand:31 - User views available vegetables
+2021-12-11 11:14:20,552  INFO SortVegetablesCommand:29 - User sort vegetables in salad
+2021-12-11 11:14:20,924  INFO ViewSaladCommand:19 - User views salad
+2021-12-11 11:14:22,273  INFO ViewSaladCommand:31 - User views available vegetables
+2021-12-11 11:14:26,597  INFO VegetableWithCaloriesInRangeController:76 - User views vegetables with calories in range [50.0; 150.0]
+2021-12-11 11:14:30,339  INFO VegetableWithCaloriesInRangeController:76 - User views vegetables with calories in range [10.0; 150.0]
+2021-12-11 11:14:33,612  INFO VegetableWithCaloriesInRangeController:76 - User views vegetables with calories in range [10.0; 25.0]
+2021-12-11 11:14:34,657  INFO ViewSaladVegetablesWithCaloriesInRange:28 - User views vegetables in salad with calories in range
+2021-12-11 11:14:38,184  INFO SortVegetablesCommand:29 - User sort vegetables in salad
+2021-12-11 11:14:38,548  INFO ViewSaladCommand:19 - User views salad
+2021-12-11 11:14:43,328  INFO ViewSaladCommand:31 - User views available vegetables
+2021-12-11 11:16:58,197  INFO VegetableController:55 - Successfully connected to database
+2021-12-11 11:16:58,246  INFO VegetableController:62 - Reading data from database
+2021-12-11 11:16:58,254  INFO VegetableController:72 - Finished reading data from database. Closing the connection

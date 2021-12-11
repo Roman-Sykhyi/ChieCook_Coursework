@@ -1,7 +1,12 @@
 package chiefcook.chiecook_coursework.commands;
 
+import chiefcook.chiecook_coursework.MainMenuApplication;
 import chiefcook.chiecook_coursework.controllers.SaladController;
 
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 import org.apache.log4j.Logger;
 
 public class SortVegetablesCommand implements IMenuCommand {
@@ -11,27 +16,22 @@ public class SortVegetablesCommand implements IMenuCommand {
 
     @Override
     public void execute() {
-        /*try {
-            String sortType = params.get(0);
+        try {
+            Stage stage = new Stage();
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.setResizable(false);
 
-            if(sortType.equals("name")) {
-                saladController.sortIngredientsByName();
-            } else if (sortType.equals("weight")) {
-                saladController.sortIngredientsByWeight();
-            } else if (sortType.equals("calories")) {
-                saladController.sortIngredientsByCalories();
-            }
-            else {
-                System.out.println("Wrong argument");
-                return;
-            }
+            FXMLLoader fxmlLoader = new FXMLLoader(MainMenuApplication.class.getResource("sort-salad.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 486, 224);
+            stage.setScene(scene);
+            stage.showAndWait();
 
-            LOG.info("User sorting salad vegetables by " + sortType);
-            System.out.println("Sorting salad vegetables by " + sortType);
+            LOG.info("User sort vegetables in salad");
         } catch (Exception e) {
-            LOG.error("Error sorting vegetables");
+            LOG.error("Error opening SortVegetables window");
             LOG.error(e.getMessage());
-            System.out.println("Error sorting vegetables");
-        }*/
+
+            e.printStackTrace();
+        }
     }
 }

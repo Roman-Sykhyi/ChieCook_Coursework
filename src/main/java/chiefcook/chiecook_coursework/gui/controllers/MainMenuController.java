@@ -75,6 +75,10 @@ public class MainMenuController implements Initializable {
             commandsController.execute("viewVegetablesWithCaloriesInRange");
         });
 
+        sortVegetablesBtn.setOnAction(event -> {
+            commandsController.execute("sortVegetables");
+        });
+
         clearSaladBtn.setOnAction(event -> saladController.createSalad());
 
         exitBtn.setOnAction(event -> System.exit(0));
