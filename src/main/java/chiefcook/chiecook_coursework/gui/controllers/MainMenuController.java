@@ -84,6 +84,10 @@ public class MainMenuController implements Initializable {
             mainMenu.execute("removeVegetable");
         });
 
+        calculateTotalCaloriesBtn.setOnAction(event -> {
+            mainMenu.execute("calculateCalories");
+        });
+
         clearSaladBtn.setOnAction(event -> saladController.createSalad());
 
         exitBtn.setOnAction(event -> System.exit(0));

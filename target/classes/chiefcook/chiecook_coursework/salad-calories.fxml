@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="168.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chiefcook.chiecook_coursework.gui.controllers.SaladCaloriesController">
+   <children>
+      <Label layoutX="99.0" layoutY="42.0" text="Кількість калорій в салаті:">
+         <font>
+            <Font name="Consolas Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="caloriesText" alignment="CENTER" layoutX="217.0" layoutY="95.0" prefHeight="31.0" prefWidth="167.0" text="100" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="217.0" AnchorPane.rightAnchor="216.0">
+         <font>
+            <Font name="Consolas Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

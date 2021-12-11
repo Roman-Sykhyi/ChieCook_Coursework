@@ -1,7 +1,12 @@
 package chiefcook.chiecook_coursework.mainMenu.commands;
 
+import chiefcook.chiecook_coursework.MainMenuApplication;
 import chiefcook.chiecook_coursework.controllers.SaladController;
 
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 import org.apache.log4j.Logger;
 
 import java.util.List;
@@ -19,7 +24,22 @@ public class CalculateSaladCaloriesCommand implements IMenuCommand {
 
     @Override
     public void execute() {
-        System.out.println("Salad total calories: " + saladController.getSaladCalories());
+        try {
+            Stage stage = new Stage();
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.setResizable(false);
+
+            FXMLLoader fxmlLoader = new FXMLLoader(MainMenuApplication.class.getResource("salad-calories.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 600, 168);
+            stage.setScene(scene);
+            stage.showAndWait();
+        } catch (Exception e) {
+            LOG.error("Error opening SaladCalories window");
+            LOG.error(e.getMessage());
+
+            e.printStackTrace();
+        }
+
         LOG.info("User calculating salad calories");
     }
 
