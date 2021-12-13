@@ -73,6 +73,8 @@ public class VegetableController {
         } catch (Exception e) {
             LOG.error("Failed connect to database");
             LOG.error(e.getMessage());
+            LOG.info("Trying to load vegetables from file");
+            init("E:\\pp_labs\\ChieCook_Coursework\\Vegetables.txt");
             System.out.println(e.getMessage());
         }
     }

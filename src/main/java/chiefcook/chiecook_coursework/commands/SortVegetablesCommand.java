@@ -1,7 +1,6 @@
 package chiefcook.chiecook_coursework.commands;
 
 import chiefcook.chiecook_coursework.MainMenuApplication;
-import chiefcook.chiecook_coursework.controllers.SaladController;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
