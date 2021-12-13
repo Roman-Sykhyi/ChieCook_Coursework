@@ -41,8 +41,6 @@ public class VegetableController {
         } catch (Exception e) {
             LOG.error("Error reading list of vegetables from file");
             LOG.error(e.getMessage());
-            System.out.println("Error reading list of vegetables from file");
-            System.out.println("Exiting program");
             System.exit(1);
         }
     }
@@ -75,7 +73,6 @@ public class VegetableController {
             LOG.error(e.getMessage());
             LOG.info("Trying to load vegetables from file");
             init("E:\\pp_labs\\ChieCook_Coursework\\Vegetables.txt");
-            System.out.println(e.getMessage());
         }
     }
 

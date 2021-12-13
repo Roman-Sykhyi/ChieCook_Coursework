@@ -10,7 +10,6 @@ public class CommandsController {
         private static final Logger LOG = Logger.getLogger(CommandsController.class.getSimpleName());
 
         private Map<String, IMenuCommand> commands;
-        private Scanner scanner = new Scanner(System.in);
 
         public CommandsController() {
                 commands = new LinkedHashMap<>();

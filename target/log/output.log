@@ -1,0 +1,3 @@
+2021-12-13 15:43:04,320  INFO VegetableController:55 - Successfully connected to database
+2021-12-13 15:43:04,355  INFO VegetableController:62 - Reading data from database
+2021-12-13 15:43:04,635  INFO VegetableController:72 - Finished reading data from database. Closing the connection
