@@ -1,5 +1,6 @@
 package chiefcook.chiecook_coursework.controllers;
 
+import chiefcook.chiecook_coursework.MainMenuApplication;
 import chiefcook.chiecook_coursework.models.Vegetable;
 import org.apache.log4j.Logger;
 
@@ -72,7 +73,7 @@ public class VegetableController {
             LOG.error("Failed connect to database");
             LOG.error(e.getMessage());
             LOG.info("Trying to load vegetables from file");
-            init("E:\\pp_labs\\ChieCook_Coursework\\Vegetables.txt");
+            init(MainMenuApplication.class.getResource("Vegetables.txt").getPath());
         }
     }
 
