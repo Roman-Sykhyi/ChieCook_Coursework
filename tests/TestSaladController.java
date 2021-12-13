@@ -1,5 +1,3 @@
-package chiefcook.chiecook_coursework.test.java;
-
 import chiefcook.chiecook_coursework.controllers.SaladController;
 import chiefcook.chiecook_coursework.models.Vegetable;
 
@@ -17,7 +15,7 @@ public class TestSaladController {
 
         String result = saladController.getSaladInfo();
 
-        Assertions.assertEquals("Salad:\nVegetable - 100.0 grams\n", result);
+        Assertions.assertEquals("Vegetable - 100.0 грам\n", result);
     }
 
     @Test

@@ -1,5 +1,3 @@
-package chiefcook.chiecook_coursework.test.java;
-
 import chiefcook.chiecook_coursework.controllers.VegetableController;
 import chiefcook.chiecook_coursework.models.Vegetable;
 
@@ -25,7 +23,7 @@ public class TestVegetableController {
         VegetableController vegetableController = new VegetableController(filePath);
 
         String result = vegetableController.getVegetablesInfo();
-        String expected = "1. Vegetable, calories = 12.0\n2. Vegetable1, calories = 15.0\n";
+        String expected = "1. Vegetable, калорії = 12.0\n2. Vegetable1, калорії = 15.0\n";
 
         Assertions.assertEquals(expected, result);
     }

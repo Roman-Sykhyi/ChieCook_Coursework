@@ -4,5 +4,9 @@
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources/log4j.properties" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/tests/TestSalad.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tests/TestSaladController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tests/TestVegetable.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tests/TestVegetableController.java" charset="UTF-8" />
   </component>
 </project>

@@ -1,5 +1,3 @@
-package chiefcook.chiecook_coursework.test.java;
-
 import chiefcook.chiecook_coursework.models.Vegetable;
 
 import org.junit.jupiter.api.Assertions;
