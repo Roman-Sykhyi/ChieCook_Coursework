@@ -32,3 +32,24 @@
 2021-12-13 12:57:17,145  INFO VegetableController:40 - List of vegetables successfully read from file
 2021-12-13 12:57:25,991  INFO VegetableController:40 - List of vegetables successfully read from file
 2021-12-13 12:57:26,005  INFO VegetableController:40 - List of vegetables successfully read from file
+2021-12-13 14:58:53,452  INFO VegetableController:55 - Successfully connected to database
+2021-12-13 14:58:53,658  INFO VegetableController:62 - Reading data from database
+2021-12-13 14:58:53,683  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-13 14:58:59,905  INFO ViewAvailableVegetablesCommand:29 - User views available vegetables
+2021-12-13 14:59:00,651  INFO ViewSaladCommand:19 - User views salad
+2021-12-13 14:59:01,568  INFO ViewSaladCommand:31 - User views available vegetables
+2021-12-13 14:59:02,816  INFO CalculateSaladCaloriesCommand:35 - User calculating salad calories
+2021-12-13 14:59:04,274  INFO ViewSaladVegetablesWithCaloriesInRange:28 - User views vegetables in salad with calories in range
+2021-12-13 14:59:05,832  INFO SortVegetablesCommand:28 - User sort vegetables in salad
+2021-12-13 15:09:59,427  INFO VegetableController:40 - List of vegetables successfully read from file
+2021-12-13 15:09:59,433  INFO VegetableController:40 - List of vegetables successfully read from file
+2021-12-13 15:11:34,914  INFO VegetableController:40 - List of vegetables successfully read from file
+2021-12-13 15:11:34,930  INFO VegetableController:40 - List of vegetables successfully read from file
+2021-12-13 15:21:42,080  INFO VegetableController:55 - Successfully connected to database
+2021-12-13 15:21:42,126  INFO VegetableController:62 - Reading data from database
+2021-12-13 15:21:42,135  INFO VegetableController:72 - Finished reading data from database. Closing the connection
+2021-12-13 15:22:22,797  INFO VegetableController:40 - List of vegetables successfully read from file
+2021-12-13 15:22:22,801  INFO VegetableController:40 - List of vegetables successfully read from file
+2021-12-13 15:24:36,816  INFO VegetableController:55 - Successfully connected to database
+2021-12-13 15:24:36,887  INFO VegetableController:62 - Reading data from database
+2021-12-13 15:24:36,900  INFO VegetableController:72 - Finished reading data from database. Closing the connection

@@ -8,6 +8,7 @@ chiefcook\chiecook_coursework\commands\ViewSaladCommand.class
 chiefcook\chiecook_coursework\models\Salad$1.class
 chiefcook\chiecook_coursework\gui\controllers\SaladCaloriesController.class
 chiefcook\chiecook_coursework\controllers\CommandsController.class
+chiefcook\chiecook_coursework\Main.class
 chiefcook\chiecook_coursework\gui\controllers\AddIngredientController.class
 chiefcook\chiecook_coursework\gui\controllers\RemoveVegetableController.class
 chiefcook\chiecook_coursework\models\Vegetable.class
