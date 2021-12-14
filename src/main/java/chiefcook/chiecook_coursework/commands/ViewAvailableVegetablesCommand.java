@@ -25,8 +25,6 @@ public class ViewAvailableVegetablesCommand implements IMenuCommand {
             Scene scene = new Scene(fxmlLoader.load(), 400, 300);
             stage.setScene(scene);
             stage.showAndWait();
-
-            LOG.info("User views available vegetables");
         } catch (Exception e) {
             LOG.error("Error opening ViewAvailableVegetables window");
             LOG.error(e.getMessage());

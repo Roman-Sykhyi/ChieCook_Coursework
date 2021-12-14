@@ -4,3 +4,25 @@
 2021-12-13 16:06:55,868  INFO VegetableController:61 - Reading data from database
 2021-12-13 16:06:55,873  INFO VegetableController:71 - Finished reading data from database. Closing the connection
 2021-12-13 16:06:58,855  INFO ViewAvailableVegetablesCommand:29 - User views available vegetables
+2021-12-13 16:18:33,439  INFO VegetableController:54 - Successfully connected to database
+2021-12-13 16:18:33,489  INFO VegetableController:61 - Reading data from database
+2021-12-13 16:18:33,495  INFO VegetableController:71 - Finished reading data from database. Closing the connection
+2021-12-13 16:18:38,837  INFO ViewAvailableVegetablesCommand:29 - User views available vegetables
+2021-12-13 16:23:54,303  INFO VegetableController:54 - Successfully connected to database
+2021-12-13 16:23:54,340  INFO VegetableController:61 - Reading data from database
+2021-12-13 16:23:54,346  INFO VegetableController:71 - Finished reading data from database. Closing the connection
+2021-12-13 16:24:01,270  INFO ViewAvailableVegetablesCommand:29 - User views available vegetables
+2021-12-13 16:24:03,661  INFO VegetableController:54 - Successfully connected to database
+2021-12-13 16:24:03,700  INFO VegetableController:61 - Reading data from database
+2021-12-13 16:24:03,707  INFO VegetableController:71 - Finished reading data from database. Closing the connection
+2021-12-13 16:24:08,192  INFO ViewSaladCommand:19 - User views salad
+2021-12-13 16:24:09,367  INFO ViewSaladCommand:31 - User views available vegetables
+2021-12-13 16:24:13,197  INFO AddIngredientController:70 - 100.0 грам Морква додано до салату
+2021-12-13 16:24:19,100  INFO AddIngredientController:70 - 10.0 грам Часник додано до салату
+2021-12-13 16:24:29,892  INFO AddIngredientController:70 - 60.0 грам Горох додано до салату
+2021-12-13 16:24:31,224  INFO ViewSaladCommand:19 - User views salad
+2021-12-13 16:24:33,844  INFO ViewSaladCommand:31 - User views available vegetables
+2021-12-13 16:24:38,115  INFO SortVegetablesCommand:28 - User sort vegetables in salad
+2021-12-13 16:24:38,616  INFO ViewSaladCommand:19 - User views salad
+2021-12-13 16:24:40,379  INFO ViewSaladCommand:31 - User views available vegetables
+2021-12-13 16:24:42,381  INFO CalculateSaladCaloriesCommand:35 - User calculating salad calories

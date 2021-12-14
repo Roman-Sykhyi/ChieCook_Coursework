@@ -67,7 +67,7 @@ public class AddIngredientController implements Initializable {
 
             String message = weight + " грам " + vegetable.getName() + " додано до салату";
             showDialogWindow(message, Alert.AlertType.INFORMATION);
-            LOG.info(message);
+            LOG.info("User added " + weight + " grams of " + vegetable.getName() + " to salad");
         } catch (NumberFormatException e) {
             showDialogWindow("Помилка зчитування ваги. Вводіть ціле число.", Alert.AlertType.ERROR);
         } catch (NullPointerException e) {

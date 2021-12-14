@@ -13,11 +13,14 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import org.apache.log4j.Logger;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class SortVegetablesController implements Initializable {
+
+    private static final Logger LOG = Logger.getLogger(SortVegetablesController.class.getSimpleName());
 
     private SaladController saladController;
 
@@ -43,14 +46,17 @@ public class SortVegetablesController implements Initializable {
             case "назва":
                 saladController.sortIngredientsByName();
                 showWindow(type);
+                LOG.info("User sorts vegetables in salad by name");
                 break;
             case "вага":
                 saladController.sortIngredientsByWeight();
                 showWindow(type);
+                LOG.info("User sorts vegetables in salad by weight");
                 break;
             case "калорії":
                 saladController.sortIngredientsByCalories();
                 showWindow(type);
+                LOG.info("User sorts vegetables in salad by calories");
                 break;
         }
     }

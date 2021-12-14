@@ -16,8 +16,6 @@ public class ViewSaladCommand implements IMenuCommand {
 
     @Override
     public void execute() {
-        LOG.info("User views salad");
-
         try {
             Stage stage = new Stage();
             stage.initModality(Modality.APPLICATION_MODAL);
@@ -27,8 +25,6 @@ public class ViewSaladCommand implements IMenuCommand {
             Scene scene = new Scene(fxmlLoader.load(), 400, 300);
             stage.setScene(scene);
             stage.showAndWait();
-
-            LOG.info("User views available vegetables");
         } catch (Exception e) {
             LOG.error("Error opening ViewAvailableVegetables window");
             LOG.error(e.getMessage());

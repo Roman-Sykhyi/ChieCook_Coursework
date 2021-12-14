@@ -1,5 +1,6 @@
 package chiefcook.chiecook_coursework;
 
+import chiefcook.chiecook_coursework.commands.ViewSaladVegetablesWithCaloriesInRange;
 import chiefcook.chiecook_coursework.controllers.SaladController;
 import chiefcook.chiecook_coursework.controllers.VegetableController;
 import chiefcook.chiecook_coursework.controllers.CommandsController;
@@ -7,10 +8,13 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.apache.log4j.Logger;
 
 import java.io.IOException;
 
 public class MainMenuApplication extends Application {
+
+    private static final Logger LOG = Logger.getLogger(MainMenuApplication.class.getSimpleName());
 
     public static VegetableController vegetableController;
     public static SaladController saladController;
@@ -29,8 +33,11 @@ public class MainMenuApplication extends Application {
 
     public static void main(String[] args) {
         vegetableController = new VegetableController();
+        LOG.info("Creating VegetableController");
         saladController = new SaladController();
+        LOG.info("Creating SaladController");
         commandsController = new CommandsController();
+        LOG.info("Creating CommandsController");
         launch();
     }
 }

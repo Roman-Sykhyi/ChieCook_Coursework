@@ -10,6 +10,7 @@ import javafx.stage.Stage;
 import org.apache.log4j.Logger;
 
 public class ViewSaladVegetablesWithCaloriesInRange implements IMenuCommand {
+
     private static final Logger LOG = Logger.getLogger(ViewSaladVegetablesWithCaloriesInRange.class.getSimpleName());
 
     public final static String NAME = "viewVegetablesWithCaloriesInRange";
@@ -25,8 +26,6 @@ public class ViewSaladVegetablesWithCaloriesInRange implements IMenuCommand {
             Scene scene = new Scene(fxmlLoader.load(), 600, 322);
             stage.setScene(scene);
             stage.showAndWait();
-            LOG.info("User views vegetables in salad with calories in range");
-
         } catch (Exception e) {
             LOG.error("Error opening ViewVegetablesWithCaloriesInRange window");
             LOG.error(e.getMessage());

@@ -24,8 +24,6 @@ public class SortVegetablesCommand implements IMenuCommand {
             Scene scene = new Scene(fxmlLoader.load(), 486, 224);
             stage.setScene(scene);
             stage.showAndWait();
-
-            LOG.info("User sort vegetables in salad");
         } catch (Exception e) {
             LOG.error("Error opening SortVegetables window");
             LOG.error(e.getMessage());

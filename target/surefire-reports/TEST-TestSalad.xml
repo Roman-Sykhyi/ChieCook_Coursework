@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="0" name="TestSalad" time="0.026" errors="0" skipped="0">
+<testsuite tests="7" failures="0" name="TestSalad" time="0.027" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2021.2.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -66,10 +66,10 @@
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
   <testcase classname="TestSalad" name="TestSalad.testGetVegetables" time="0.002"/>
+  <testcase classname="TestSalad" name="TestSalad.testSortByName" time="0"/>
   <testcase classname="TestSalad" name="TestSalad.testSortByWeight" time="0"/>
   <testcase classname="TestSalad" name="TestSalad.testSortByCalories" time="0"/>
-  <testcase classname="TestSalad" name="TestSalad.testAddIngredient" time="0.023"/>
-  <testcase classname="TestSalad" name="TestSalad.testSortByName" time="0.001"/>
-  <testcase classname="TestSalad" name="TestSalad.testRemoveIngredient" time="0"/>
+  <testcase classname="TestSalad" name="TestSalad.testAddIngredient" time="0.024"/>
   <testcase classname="TestSalad" name="TestSalad.testGetTotalCalories" time="0"/>
+  <testcase classname="TestSalad" name="TestSalad.testRemoveIngredient" time="0.001"/>
 </testsuite>

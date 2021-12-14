@@ -7,6 +7,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import org.apache.log4j.Logger;
 
 import java.net.URL;
 import java.util.Arrays;
@@ -14,6 +15,8 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class ViewAvailableVegetablesController implements Initializable {
+
+    private static final Logger LOG = Logger.getLogger(ViewAvailableVegetablesController.class.getSimpleName());
 
     private VegetableController vegetableController;
 
@@ -32,5 +35,7 @@ public class ViewAvailableVegetablesController implements Initializable {
         for (String item : items) {
             listView.getItems().add(item);
         }
+
+        LOG.info("User views available vegetables list");
     }
 }

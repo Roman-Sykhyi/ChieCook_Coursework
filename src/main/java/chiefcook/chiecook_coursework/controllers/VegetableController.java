@@ -47,7 +47,7 @@ public class VegetableController {
     }
 
     private void init() {
-        String url = "jdbc:sqlserver://DESKTOP-2LCR83P;databaseName=ChiefCook;integratedSecurity=true;";
+        String url = "jdbc:sqlserver://localhost;databaseName=ChiefCook;integratedSecurity=true;";
 
         try {
             Connection connection = DriverManager.getConnection(url);
