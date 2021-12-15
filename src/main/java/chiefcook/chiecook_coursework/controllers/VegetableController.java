@@ -73,6 +73,7 @@ public class VegetableController {
             LOG.error("Failed connect to database");
             LOG.error(e.getMessage());
             LOG.info("Trying to load vegetables from file");
+
             init(MainMenuApplication.class.getResource("Vegetables.txt").getPath());
         }
     }

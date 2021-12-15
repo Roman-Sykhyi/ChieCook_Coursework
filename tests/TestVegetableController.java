@@ -19,6 +19,13 @@ public class TestVegetableController {
     }
 
     @Test
+    public void testInitFromDatabase() {
+        VegetableController vegetableController = new VegetableController();
+
+        Assertions.assertTrue(vegetableController.getVegetables().size() > 0);
+    }
+
+    @Test
     public void testGetVegetablesInfo() {
         VegetableController vegetableController = new VegetableController(filePath);
 
